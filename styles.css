@@ -1,0 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("http://www.thehindubusinessline.com/multimedia/dynamic/03100/ct09_call_taxi_3100638f.jpg");
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 64px;
+}
