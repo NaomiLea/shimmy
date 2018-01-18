@@ -57,13 +57,14 @@ header h1 {
 
 .inputs li {
   margin: 0 20px;
+  flex-grow: 1;
+  width: 300px
 }
 
 form {
   display: flex;
   justify-content: center;
   background-color: #fbf342;
-  height: 100%;
   margin-top: 200px;
   width: 960px;
   border-radius: 5px;
