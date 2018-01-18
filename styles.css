@@ -1,5 +1,6 @@
 body {
   background-color: #dbd9d9;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -43,16 +44,32 @@ header h1 {
 }
 
 .inputs {
+  font-family: 'Amatic SC', cursive;
   padding: 40px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs {
+  font-size: 32px;
+  flex-wrap: wrap;
+}
+
+.inputs li {
+  margin: 0 20px;
 }
 
 form {
   background-color: #fbf342;
   height: 100%;
   margin-top: 200px;
-  width: 1080px;
+  width: 960px;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
   -moz-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
   box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
+}
+
+ul {
+  list-style-type: none;
 }
