@@ -3,9 +3,7 @@ body {
 }
 
 header {
-  background-color: #e7e14b;
-  display: flex;
-  justify-content: flex-end;
+  background-color: #fbf342;
   width: 100%;
   position: fixed;
   top: 0;
@@ -13,8 +11,13 @@ header {
   height: 100px;
 }
 
+.icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
 header h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 40px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
