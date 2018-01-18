@@ -60,6 +60,8 @@ header h1 {
 }
 
 form {
+  display: flex;
+  justify-content: center;
   background-color: #fbf342;
   height: 100%;
   margin-top: 200px;
@@ -72,4 +74,5 @@ form {
 
 ul {
   list-style-type: none;
+  max-width: 600px;
 }
