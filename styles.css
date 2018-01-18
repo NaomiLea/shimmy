@@ -19,7 +19,40 @@ header {
   display: flex;
 }
 
+.icons {
+  margin-left: 40px;
+}
+
+.options {
+  margin-right: 40px;
+}
+
+.options h2 {
+  margin: 0 20px;
+}
+
 header h1 {
   font-size: 40px;
   margin-left: 20px;
+}
+
+.address-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs {
+  padding: 40px 40px;
+}
+
+form {
+  background-color: #fbf342;
+  height: 100%;
+  margin-top: 200px;
+  width: 1080px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
+  -moz-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
+  box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
 }
