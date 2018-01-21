@@ -20,7 +20,7 @@ var smtpTransport = nodemailer.createTransport(smtpTransport({
   service: 'Gmail',
   auth: {
     user: 'naomikudren@gmail.com',
-    pass: '######'
+    pass: '####'
   }
 }));
 
@@ -28,9 +28,9 @@ app.post('/send-email', function(req, res) {
     var mailOptions = {
         from: '"Naomi" <naomikudren@gmail.com>', // sender address
         to: "naomikudren@gmail.com", // list of receivers
-        subject: 'Register to girl.Code ', // Subject line
-        text: 'Follow this link to register to girl.Code ', // plaintext body
-        html: '<b>Register to girl.Code</b> <p>Sign up to join at www.amaze.co.uk/girlCode</p>' // html body
+        subject: 'Request ', // Subject line
+        text: req.body.to // plaintext body
+
     };
 		smtpTransport.sendMail(mailOptions, function(error, info) {
          if (error) {
