@@ -59,7 +59,7 @@ header h1 {
   justify-content: center;
 }
 
-input[type=text], input[type=date], input[type=time] {
+input[type=text], input[type=date], input[type=time], input[type=phone] {
   width: 100%;
   height: 50px;
   font-size: 20px;
@@ -79,6 +79,7 @@ form {
   -webkit-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
   -moz-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
   box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
+  flex-wrap: wrap;
 }
 
 ul {
@@ -100,4 +101,15 @@ ul {
 
 .inputs li button:hover {
   background-color: #e5b116;
+}
+
+@media only screen and (max-width: 768px) {
+  input[type=text], input[type=date], input[type=time] {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+  .inputs li {
+    flex-wrap: wrap;
+  }
 }
