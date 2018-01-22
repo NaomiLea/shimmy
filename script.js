@@ -10,7 +10,7 @@ var smtpTransport = require('nodemailer-smtp-transport');
 app.set('port', 3000);
 
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(bodyParser.urlencoded({ extended: false })); app.use(bodyParser.json());
 var server = app.listen(app.get('port'), function() {
   var port = server.address().port;
   console.log('Magic happens on port ' + port);
@@ -29,7 +29,7 @@ app.post('/send-email', function(req, res) {
         from: '"Naomi" <naomikudren@gmail.com>', // sender address
         to: "naomikudren@gmail.com", // list of receivers
         subject: 'Request ', // Subject line
-        text: req.body.to // plaintext body
+        text: "From: " + req.body.from + " To: " + req.body.to + " Date: " + req.body.date + " Time: " + req.body.time // plaintext body
 
     };
 		smtpTransport.sendMail(mailOptions, function(error, info) {
