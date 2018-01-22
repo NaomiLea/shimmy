@@ -7,20 +7,24 @@ var smtpTransport = require('nodemailer-smtp-transport');
 
 
 
-app.set('port', 3000);
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false })); app.use(bodyParser.json());
-var server = app.listen(app.get('port'), function() {
+/*var server = app.listen(process.env.PORT('port')|| 3000 , function() {
   var port = server.address().port;
   console.log('Magic happens on port ' + port);
+});*/
+
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
 
 var smtpTransport = nodemailer.createTransport(smtpTransport({
   service: 'Gmail',
   auth: {
     user: 'naomikudren@gmail.com',
-    pass: '####'
+    pass: '###'
   }
 }));
 
