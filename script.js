@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
 var smtpTransport = require('nodemailer-smtp-transport');
-
+var port = process.env.PORT || 8000;
 
 
 
@@ -16,8 +16,8 @@ app.use(bodyParser.urlencoded({ extended: false })); app.use(bodyParser.json());
   console.log('Magic happens on port ' + port);
 });*/
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+app.listen(port, function() {
+    console.log("App is running on port " + port);
 });
 
 var smtpTransport = nodemailer.createTransport(smtpTransport({
