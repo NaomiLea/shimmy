@@ -4,21 +4,22 @@ var app = express();
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
 var smtpTransport = require('nodemailer-smtp-transport');
-var port = process.env.PORT || 8000;
+var server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
+app.listen(server_port, server_host, function() {
+    console.log('Listening on port %d', server_port);
+});
 
 
 
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false })); app.use(bodyParser.json());
-/*var server = app.listen(process.env.PORT('port')|| 3000 , function() {
-  var port = server.address().port;
-  console.log('Magic happens on port ' + port);
-});*/
 
-app.listen(port, function() {
+
+/*app.listen(port, function() {
     console.log("App is running on port " + port);
-});
+});*/
 
 var smtpTransport = nodemailer.createTransport(smtpTransport({
   service: 'Gmail',
