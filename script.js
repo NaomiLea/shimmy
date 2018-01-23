@@ -23,8 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false })); app.use(bodyParser.json());
 var smtpTransport = nodemailer.createTransport(smtpTransport({
   service: 'Gmail',
   auth: {
-    user: 'naomikudren@gmail.com',
-    pass: '###'
+    user: 'shimoniot.avraham@gmail.com',
+    pass: 'naomiisbest'
   }
 }));
 
