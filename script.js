@@ -31,7 +31,7 @@ var smtpTransport = nodemailer.createTransport(smtpTransport({
 app.post('/send-email', function(req, res) {
     var mailOptions = {
         from: '"Naomi" <naomikudren@gmail.com>', // sender address
-        to: "naomikudren@gmail.com", // list of receivers
+        to: "shimoniot.avraham@gmail.com", // list of receivers
         subject: 'Request ', // Subject line
         text: "From: " + req.body.from + " To: " + req.body.to + " Date: " + req.body.date + " Time: " + req.body.time // plaintext body
 
