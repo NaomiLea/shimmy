@@ -33,7 +33,7 @@ app.post('/send-email', function(req, res) {
         from: '"Naomi" <naomikudren@gmail.com>', // sender address
         to: "shimoniot.avraham@gmail.com", // list of receivers
         subject: 'Request ', // Subject line
-        text: "From: " + req.body.from + " To: " + req.body.to + " Date: " + req.body.date + " Time: " + req.body.time // plaintext body
+        text: "Name: " + req.body.name + "Phone: " + req.body.phone " From: " + req.body.from + " To: " + req.body.to + " Date: " + req.body.date + " Time: " + req.body.time // plaintext body
 
     };
 		smtpTransport.sendMail(mailOptions, function(error, info) {
