@@ -12,7 +12,7 @@ app.listen(process.env.PORT || 3000,function() {
 
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(bodyParser.urlencoded({ extended: false })); app.use(bodyParser.json());
 
 
@@ -43,5 +43,5 @@ app.post('/send-email', function(req, res) {
          console.log('Message sent: ' + info.response);
      });
 
-     res.redirect("/index.html");
+     res.redirect("/confirmation.html");
  });

@@ -69,7 +69,7 @@ input[type=text], input[type=date], input[type=time], input[type=phone] {
   margin-right: 10px;
 }
 
-form {
+form, .confirmation {
   display: flex;
   justify-content: center;
   background-color: #fbf342;
@@ -101,6 +101,20 @@ ul {
 
 .inputs li button:hover {
   background-color: #e5b116;
+}
+
+.confirmation {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmation img {
+  width: 150px;
+}
+
+.confirmation>* {
+  width: 100%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
