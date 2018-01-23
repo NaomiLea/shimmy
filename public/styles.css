@@ -105,11 +105,10 @@ ul {
 
 @media only screen and (max-width: 768px) {
   input[type=text], input[type=date], input[type=time] {
-    width: 100%;
     height: 50px;
     font-size: 20px;
   }
-  .inputs li {
-    flex-wrap: wrap;
+  form {
+    margin-top: 100px;
   }
 }
