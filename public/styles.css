@@ -117,6 +117,26 @@ ul {
   text-align: center;
 }
 
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #fbf342;
+  position: fixed;
+  bottom: 0;
+  margin-top: 20px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-right: 50px;
+}
+
+footer h4 {
+  margin-left: 50px;
+}
+
 @media only screen and (max-width: 768px) {
   input[type=text], input[type=date], input[type=time] {
     height: 50px;
