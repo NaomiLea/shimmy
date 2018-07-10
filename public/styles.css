@@ -16,6 +16,12 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #f2efef;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .header img {
@@ -49,6 +55,7 @@ header h1 {
   display: flex;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .contact {
@@ -69,16 +76,27 @@ header h1 {
 }
 
 .confirmation {
-  display: flex;
-  justify-content: center;
-  background-color: #fbf342;
-  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 960px;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
-  -moz-box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
-  box-shadow: 2px 2px 9px 6px rgba(191, 191, 191, 1);
   flex-wrap: wrap;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
+.confirmation-window {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmation-wrapper {
+  background-color: #000000;
+}
+
+.confirmation-wrapper img {
+  margin-top: -300px;
 }
 
 ul {
