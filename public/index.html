@@ -24,7 +24,11 @@
 
   <div class="about">
     <div class="container">
-      <p>Our Taxis are designed to accomdate the most comfortable journey for disabled people. Without having to move the Taxi can fit one wheelchair and more passengers.</p>
+      <div class="about-text">
+        <h2>About us</h2>
+        <p>Our Taxis are designed to accomdate the most comfortable journey for disabled people. Without having to move the Taxi can fit one wheelchair and more passengers.</p>
+      </div>
+      <img class="img-taxi" src="taxi.png">
     </div>
   </div>
 
@@ -39,37 +43,27 @@
         <form action="/send-email" method="post">
           <ul class="inputs">
             <li>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
+              <input type="text" id="name" name="name" placeholder="Name" />
+              <input type="phone" id="phone" name="phone" placeholder="Phone" />
             </li>
+
             <li>
-              <label for="phone">Phone</label>
-              <input type="phone" id="phone" name="pbone" />
+
+              <input type="text" id="from" name="from" placeholder="From" />
+              <input type="text" id="to" name="to" placeholder="To" />
             </li>
+
             <li>
-              <label for="from">From</label>
-              <input type="text" id="from" name="from" />
+              <input type="text" id="city" name="city" placeholder="City" />
+              <input type="text" id="country" name="country" placeholder="Country" />
             </li>
+
             <li>
-              <label for="to">To</label>
-              <input type="text" id="to" name="to" />
-            </li>
-            <li>
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" />
-            </li>
-            <li>
-              <label for="country">Country</label>
-              <input type="text" id="country" name="country" />
-            </li>
-            <li>
-              <label for="date">Date</label>
+
               <input type="date" id="date" name="date" />
-            </li>
-            <li>
-              <label for="time">Time</label>
               <input type="time" id="time" name="time" />
             </li>
+
             <li>
               <button>Request</button>
             </li>

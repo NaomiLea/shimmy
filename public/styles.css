@@ -54,6 +54,18 @@ header h1 {
 .contact {
   display: flex;
   justify-content: center;
+  color: #074468;
+}
+
+.about p {
+  width: 70%;
+  margin-right: 40px;
+}
+
+.img-taxi {
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
 }
 
 .confirmation {
@@ -83,9 +95,24 @@ li {
 
 li input {
   min-height: 36px;
-  border: 1px solid #000000;
+  border: 1px solid #074468;
   border-radius: 0;
   padding: 5px;
+  margin-right: 10px;
+  width: 50%;
+  color: #074468;
+}
+
+li input:last-child {
+  margin-right: 0px;
+}
+
+li button {
+  width: 100%;
+  background: #074468;
+  border: 1px solid #074468;
+  color: #ffffff;
+  height: 50px;
 }
 
 .confirmation {
@@ -103,27 +130,20 @@ li input {
 }
 
 @media only screen and (max-width: 768px) {
-  input[type=text], input[type=date], input[type=time] {
-    height: 50px;
-    font-size: 20px;
-  }
-  form {
-    margin-top: 100px;
-  }
-  header h1 {
-    display: flex;
-    align-items: center;
-  }
-  .options h2 {
-    font-size: 14px;
-    margin-right: 5px;
-  }
-  header img {
-    width: 50%;
-    height: 50%;
-  }
   header h1 {
     font-size: 24px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .about p {
+    width: 100%;
+  }
+  .img-taxi {
+    width: 100%;
   }
 }
 
